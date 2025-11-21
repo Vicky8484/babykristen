@@ -15,7 +15,7 @@ h1 {
   font-family: "Averia Serif Libre", serif;
   letter-spacing: 0cm;
   color: rgb(88, 128, 97);
-  text-shadow: 6px 7px 5px rgb(99, 20, 62);
+  /*text-shadow: 6px 7px 5px rgb(99, 20, 62);*/
   margin-bottom: 1rem;
   margin-left: 3rem;
 }
@@ -93,8 +93,20 @@ a {
   img {
     border-radius: 25px;
   }
-  /*får main på midten - alle sider*/
-  main {
+  /*får på midten - alle sider*/
+  #stordiv-divider {
+    max-width: 1200px;
+    margin-inline: auto;
+  }
+  #helemain_blog {
+    max-width: 1200px;
+    margin-inline: auto;
+  }
+  #main_arrang {
+    max-width: 1200px;
+    margin-inline: auto;
+  }
+  #main_omos {
     max-width: 1200px;
     margin-inline: auto;
   }
@@ -104,6 +116,9 @@ a {
   }
   main {
     padding: 15px;
+    background-color: rgb(253, 233, 242);
+  }
+  #main_forside {
     background-color: rgb(241, 189, 205);
   }
 
