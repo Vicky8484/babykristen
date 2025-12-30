@@ -1,0 +1,12 @@
+.main_shop_1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.shop {
+  margin: 3rem;
+  text-align: center;
+}
+.shop_1 {
+  margin: 3rem;
+  text-align: center;
+}

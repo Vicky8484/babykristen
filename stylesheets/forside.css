@@ -1,0 +1,152 @@
+/*hero slideshow*/
+* {
+  box-sizing: border-box;
+}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 100%;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+/******************MAIN************************/
+
+/*hero slideshow*/
+#presentation {
+  display: none;
+}
+
+/*Alt det centrale indhold*/
+#main_forside {
+  padding: 1rem;
+}
+
+/*sidebar som ikke vises i mobil*/
+#sideting {
+  padding: 1rem;
+  display: none;
+}
+
+/*div rundt om ALT*/
+#stordiv-divider {
+  background-color: #e49ebd;
+}
+
+.community-img {
+  display: none;
+}
+
+.intro {
+  text-align: center;
+  padding-bottom: 1rem;
+}
+
+.some-ikoner {
+  width: 330px;
+  opacity: 70%;
+  padding: 1rem;
+}
+
+@media screen and (min-width: 800px) {
+  #presentation {
+    display: block;
+  }
+
+  /*div rundt om ALT*/
+  #stordiv-divider {
+    max-width: 1200px;
+    margin-inline: auto;
+    background-color: #e49ebd;
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+  }
+
+  /*Alt det centrale indhold*/
+  #main_forside {
+    padding: 1rem;
+  }
+
+  .intro {
+    text-align: left;
+    padding-bottom: 0;
+  }
+
+  .community-img {
+    display: block;
+  }
+
+  /*sidebar med kontakt, sociale medier, kalender og andet*/
+  #sideting {
+    padding: 1rem;
+    display: block;
+  }
+
+  #sideting a {
+    text-decoration: none;
+    color: #9f4970;
+  }
+
+  #sideting a:hover {
+    color: #823658;
+  }
+
+  .sidebar-h2 {
+    color: #8c395e;
+    padding: 0;
+  }
+
+  #sideting h3 {
+    color: #8c395e;
+  }
+
+  #sideting p {
+    color: #8c395e;
+    padding: 0;
+  }
+
+  .side-kalender {
+    background-color: #f8becf;
+    padding: 0.5rem;
+    margin: 0.5rem;
+    margin-left: 0;
+    border-radius: 5px;
+    padding-bottom: 2rem;
+  }
+
+  /*opdeling af det centrale indhold*/
+  .main_forside_1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 2rem;
+  }
+  .main_forside_2 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 2rem;
+  }
+  .main_forside_3 {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin: 2rem;
+  }
+  .mini_main_forside_1 {
+    background-color: #f0a3b9;
+    margin-right: 0.5rem;
+    border-radius: 15px;
+  }
+
+  .some-ikoner {
+    width: 330px;
+    opacity: 40%;
+    padding: 1rem;
+  }
+  .mini_main_forside_2 {
+    background-color: #f0a3b9;
+    margin-left: 0.5rem;
+    border-radius: 15px;
+  }
+}

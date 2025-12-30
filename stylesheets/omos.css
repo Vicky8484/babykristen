@@ -1,0 +1,21 @@
+#main_omos {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+.main_omos {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+.main_omos_1 {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  border: dashed rgb(120, 19, 100) 3px;
+  border-radius: 25px;
+  margin: 5px;
+}
+.omvictory {
+  width: 250px;
+  height: auto;
+  margin: 5px;
+}

@@ -1,0 +1,281 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/************HEADER (menu i header)************/
+
+header {
+  top: 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #fac6e1;
+  padding: 15px;
+}
+
+.logo img {
+  width: 190px;
+  height: auto;
+  border-radius: 0;
+  padding: 0.5rem;
+}
+
+@keyframes slide {
+  50% {
+    opacity: 70%;
+  }
+  70% {
+    filter: saturate(200%);
+  }
+}
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-right: 20px;
+}
+
+.menu li:last-child {
+  margin-right: 0;
+}
+
+.menu a {
+  display: block;
+  padding: 10px;
+  color: #333333;
+  text-decoration: none;
+  transition: color 0.3s;
+  text-align: end;
+}
+
+.menu a:hover {
+  color: rgb(209, 94, 117);
+}
+
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.burger .line {
+  display: block;
+  width: 50px;
+  height: 5px;
+  background-color: #7a163a;
+  margin-bottom: 7px;
+  transition: 0.2s linear;
+}
+.burger {
+  display: none;
+}
+
+@media screen and (max-width: 800px) {
+  .menu {
+    display: none;
+  }
+
+  .burger {
+    display: block;
+    background-color: transparent;
+    border: 0;
+  }
+  .burger.active .line:nth-child(1) {
+    transform: rotate(45deg) translate(5px, 5px);
+    transition: 0.2s linear;
+  }
+
+  .burger.active .line:nth-child(2) {
+    opacity: 0;
+    transition: 0.15s linear;
+  }
+
+  .burger.active .line:nth-child(3) {
+    transform: rotate(-45deg) translate(5px, -5px);
+    transition: 0.2s linear;
+  }
+
+  nav.active .menu {
+    display: block;
+    position: absolute;
+    top: 100px;
+    left: 0;
+    width: 100%;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+    z-index: 1;
+  }
+
+  nav.active .menu li {
+    margin: 10px 20px;
+  }
+
+  nav.active .menu a {
+    font-size: 24px;
+  }
+}
+
+/***************Generelt fonte**************/
+h1 {
+  font-family: "Averia Serif Libre", serif;
+  letter-spacing: 0cm;
+  color: rgb(88, 128, 97);
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+h2 {
+  font-family: "Averia Serif Libre", serif;
+  font-weight: 500;
+  color: #a93592;
+  padding: 15px;
+  padding-bottom: 0;
+}
+
+h3 {
+  font-family: "Averia Serif Libre", serif;
+  font-weight: 600;
+  color: rgb(120, 19, 100);
+  margin-bottom: 0rem;
+}
+.h3_footer {
+  font-family: "Averia Serif Libre", serif;
+  font-weight: 600;
+  color: rgb(209, 94, 117);
+  margin: 0.3rem;
+}
+
+h4 {
+  font-family: "Overlock", sans-serif;
+  font-weight: 600;
+  color: rgb(209, 94, 117);
+  margin-bottom: 0rem;
+  margin-left: 0.5rem;
+}
+
+ul {
+  font-family: "Overlock", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(209, 94, 117);
+  font-size: 18px;
+  border-width: 10px;
+  padding-bottom: 1rem;
+  list-style-type: none;
+}
+ul li {
+  font-family: "Overlock", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(209, 94, 117);
+  font-size: 18px;
+}
+
+p {
+  margin-top: 0rem;
+  font-family: "Overlock", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 20px;
+  padding: 15px;
+}
+nav {
+  font-family: "Overlock", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(209, 94, 117);
+}
+a {
+  font-family: "Overlock", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  color: rgb(209, 94, 117);
+}
+/****************Generelt i mobil*************/
+@media screen and (max-width: 800px) {
+  p {
+    color: #9a2d84;
+  }
+
+  /*billeder*/
+  img {
+    border-radius: 25px;
+  }
+
+  /*bg-farver og andet*/
+
+  #main_forside {
+    background-color: #fde9f2;
+  }
+
+  footer {
+    font-family: "Overlock", sans-serif;
+    font-weight: 600;
+    background-color: #f5c7db;
+    color: rgb(153, 214, 110);
+    padding: 15px;
+    font-size: 1.2rem;
+  }
+
+  .column {
+    padding-bottom: 2rem;
+  }
+}
+
+/****************Generelt i desktop*************/
+@media screen and (min-width: 800px) {
+  h1 {
+    color: #587a60;
+    font-size: 3rem;
+    padding-top: 1rem;
+  }
+
+  h2 {
+    color: #9b3977;
+  }
+
+  p {
+    color: #a64783;
+  }
+
+  /*billeder*/
+  img {
+    border-radius: 25px;
+  }
+
+  /*bg-farver og andet*/
+  body {
+    background-color: #fde9f2;
+  }
+  main {
+    padding: 15px;
+    background-color: #fde9f2;
+  }
+  #main_forside {
+    background-color: #f1bdcd;
+  }
+
+  footer {
+    font-family: "Overlock", sans-serif;
+    font-weight: 600;
+    background-color: #f5c7db;
+    color: rgb(153, 214, 110);
+    padding: 15px;
+    font-size: 1.2rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+  }
+}

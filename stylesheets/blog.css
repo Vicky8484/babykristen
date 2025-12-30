@@ -1,0 +1,78 @@
+main {
+  background-color: #fdd9e9;
+  padding-bottom: 1rem;
+}
+
+.helemain_blog {
+  max-width: 1200px;
+  margin-inline: auto;
+}
+
+.hero-blog {
+  background-color: #ffe0f0;
+  border-bottom: #781364 solid;
+  padding: 3rem;
+  text-align: center;
+}
+
+.blog {
+  background-color: #ffffff;
+  border-radius: 25px;
+  border-right: solid #781364a4;
+  height: 75vh;
+  width: 80vw;
+  margin: 1rem auto;
+}
+
+.blog p {
+  font-size: 1rem;
+}
+
+@media screen and (min-width: 800px) {
+  .hero-blog {
+    background-color: #ffc5e4;
+    border-bottom: #781364 solid;
+    padding: 7rem;
+    text-align: center;
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+  }
+
+  .blog {
+    background-color: #ffffff;
+    border-radius: 25px;
+    border-right: solid #781364a4;
+    height: 60vh;
+    width: 50vw;
+    padding: 1.2rem;
+  }
+
+  /*slider*/
+  .container {
+    padding: 2rem;
+  }
+
+  .hele_mainblog {
+    position: relative;
+    max-width: 48rem;
+  }
+
+  .slider {
+    display: flex;
+    aspect-ratio: 16/9;
+    overflow-x: auto;
+    scrollbar-width: 0;
+    scroll-snap-type: x mandatory;
+    scroll-behavior: smooth;
+  }
+
+  .slider .blog {
+    flex: 1 0 100%;
+    scroll-snap-align: start;
+    object-fit: cover;
+  }
+
+  body {
+    scrollbar-color: #b85e7d #eeabb6;
+  }
+}

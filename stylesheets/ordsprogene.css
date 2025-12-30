@@ -1,0 +1,25 @@
+.ordsprogene {
+  font-size: 1.5rem;
+  text-align: center;
+  padding: 2rem;
+}
+.kapitler {
+  padding: 2rem;
+  background-color: #e88fe8;
+  border-radius: 25px;
+}
+.dagens_opsummering {
+  margin-left: 1rem;
+}
+.dagens_ordsprog {
+  margin-left: 2.4rem;
+}
+
+.ordsprogene_main {
+  display: grid;
+  grid-template-columns: 3fr 1fr;
+}
+.main_ordsprogene {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
